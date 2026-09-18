@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: elk-stack-app
+  profiles:
+    active: ${APP_PROFILE}
+  docker:
+    compose:
+      enabled: true
+      start:
+        command: up
+      stop:
+        command: down
