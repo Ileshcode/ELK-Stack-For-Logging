@@ -26,7 +26,7 @@ openssl rand -hex 32
 #### Run Docker Compose
 
 ```bash
-docker-compose -f compose.yaml --env-file 'path to env file' up -d
+docker-compose -f compose.yaml --env-file 'path to env file' up  --build -d
 ```
 
 #### P.S
